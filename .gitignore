@@ -1,3 +1,10 @@
 ﻿intermediate/
 ipch/
 *.suo
+*.sdf
+*.opensdf
+output/mill.exe
+output/mill.pdb
+output/mill.ilk
+build/Debug/
+build/Release/
