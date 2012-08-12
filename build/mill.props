@@ -7,7 +7,11 @@
   <PropertyGroup>
     <OutDir>$(MILL)\output\</OutDir>
   </PropertyGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MILL)\thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="MILL">
       <Value>$(MILL)</Value>
