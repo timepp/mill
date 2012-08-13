@@ -76,12 +76,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\mill\mainframe.h" />
     <ClInclude Include="..\mill\mill.h" />
     <ClInclude Include="..\mill\resource.h" />
+    <ClInclude Include="..\mill\serviceid.h" />
     <ClInclude Include="..\mill\stdafx.h" />
     <ClInclude Include="..\mill\targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\mill\mainframe.cpp" />
     <ClCompile Include="..\mill\mill.cpp" />
     <ClCompile Include="..\mill\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

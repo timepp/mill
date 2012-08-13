@@ -27,12 +27,21 @@
     <ClInclude Include="..\mill\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\mill\serviceid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mill\mainframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\mill\stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\mill\mill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mill\mainframe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,10 +51,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\mill\small.ico">
+    <Image Include="..\mill\res\mill.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\mill\mill.ico">
+    <Image Include="..\mill\res\small.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
