@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{abacb83b-e73f-4df3-8be8-99d52fe0d9ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\mill\stdafx.h">
@@ -33,6 +36,12 @@
     <ClInclude Include="..\mill\mainframe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\thirdparty\excelformat\BasicExcel.hpp">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\excelformat\ExcelFormat.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\mill\stdafx.cpp">
@@ -43,6 +52,12 @@
     </ClCompile>
     <ClCompile Include="..\mill\mainframe.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\excelformat\BasicExcel.cpp">
+      <Filter>ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\excelformat\ExcelFormat.cpp">
+      <Filter>ThirdParty</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
