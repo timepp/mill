@@ -12,7 +12,7 @@ class CMainFrame
 	, public CIdleHandler
 {
 public:
-	DECLARE_FRAME_WND_CLASS(NULL, IDR_MAINFRAME)
+	DECLARE_FRAME_WND_CLASS(L"mill", IDR_MAINFRAME);
 
 	BEGIN_MSG_MAP(CMainFrame)
 		MSG_WM_DESTROY(OnDestroy)
