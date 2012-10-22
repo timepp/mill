@@ -1,3 +1,6 @@
 [submodule "thirdparty/tplib"]
 	path = thirdparty/tplib
 	url = git://github.com/timepp/tplib.git
+[submodule "thirdparty/bdlog"]
+	path = thirdparty/bdlog
+	url = https://github.com/timepp/bdlog.git

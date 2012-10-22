@@ -57,7 +57,11 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(MILL)\thirdparty\bdlog\Win32\ReleaseLib</AdditionalLibraryDirectories>
     </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(MILL)\thirdparty\xpstyle.manifest</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -67,31 +71,56 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(MILL)\thirdparty\bdlog\Win32\ReleaseLib</AdditionalLibraryDirectories>
     </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(MILL)\thirdparty\xpstyle.manifest</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\mill\dialogmgr.h" />
+    <ClInclude Include="..\mill\hlp.h" />
     <ClInclude Include="..\mill\mainframe.h" />
+    <ClInclude Include="..\mill\medicalhistorydlg.h" />
+    <ClInclude Include="..\mill\medicalrecorddlg.h" />
+    <ClInclude Include="..\mill\medicationdlg.h" />
+    <ClInclude Include="..\mill\medicinemgr.h" />
     <ClInclude Include="..\mill\mill.h" />
+    <ClInclude Include="..\mill\pathmgr.h" />
+    <ClInclude Include="..\mill\peoplemgr.h" />
     <ClInclude Include="..\mill\resource.h" />
     <ClInclude Include="..\mill\serviceid.h" />
     <ClInclude Include="..\mill\stdafx.h" />
+    <ClInclude Include="..\mill\suggestiondlg.h" />
     <ClInclude Include="..\mill\targetver.h" />
+    <ClInclude Include="..\mill\waitingdlg.h" />
     <ClInclude Include="..\thirdparty\excelformat\BasicExcel.hpp" />
     <ClInclude Include="..\thirdparty\excelformat\ExcelFormat.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\mill\dialogmgr.cpp" />
+    <ClCompile Include="..\mill\hlp.cpp" />
     <ClCompile Include="..\mill\mainframe.cpp" />
+    <ClCompile Include="..\mill\medicalhistorydlg.cpp" />
+    <ClCompile Include="..\mill\medicalrecorddlg.cpp" />
+    <ClCompile Include="..\mill\medicationdlg.cpp" />
+    <ClCompile Include="..\mill\medicinemgr.cpp" />
     <ClCompile Include="..\mill\mill.cpp" />
+    <ClCompile Include="..\mill\pathmgr.cpp" />
+    <ClCompile Include="..\mill\peoplemgr.cpp" />
     <ClCompile Include="..\mill\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\mill\suggestiondlg.cpp" />
+    <ClCompile Include="..\mill\waitingdlg.cpp" />
     <ClCompile Include="..\thirdparty\excelformat\BasicExcel.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
@@ -108,7 +137,15 @@
     <Image Include="..\mill\res\mill.ico" />
     <Image Include="..\mill\res\small.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\doc\mill_design.org" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\Documents\monalisa\mill\mill\mill.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

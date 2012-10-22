@@ -20,7 +20,15 @@
 #include <wtl/include/atlres.h>
 #include <wtl/include/atlctrls.h>
 #include <wtl/include/atlctrlx.h>
+#include <wtl/include/atlframe.h>
+#include <wtl/include/atlcrack.h>
 #include <tplib/include/service.h>
 #include <tplib/include/pinyin.h>
+#include <tplib/include/format_shim.h>
+#include <bdlog/include/bdlog.h>
+#include <bdlog/include/bdlog_util.h>
 
 #include "serviceid.h"
+#include "mill.h"
+
+#undef IDC_STATIC

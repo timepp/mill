@@ -9,3 +9,5 @@ output/mill.pdb
 output/mill.ilk
 build/Debug/
 build/Release/
+/output/log
+/output/data
